@@ -1,4 +1,4 @@
-import randColor from '../Function/randColor';
+import randColor from '../../Function/randColor';
 
 export default function Style() {
 
