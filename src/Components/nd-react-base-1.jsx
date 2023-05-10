@@ -6,12 +6,21 @@ function Tekstas({text}) {
     return <h1>{text}</h1>;
 }
 
-function Dryziai({xxx}){
+function Dryziai({stripes}){
     let spalva = 'violet';
-    if (xxx===1) {spalva='blue'}
-    else if (xxx===2) {
+    if (stripes===1) {spalva='blue'}
+    else if (stripes===2) {
         spalva='red'};
         return <h1 style={{color: spalva}}>Zebrai ir Bebrai</h1>
+}
+
+function Planetos ({p1, p2}) {
+    return (
+        <div>
+            <h1>{p1}</h1>
+            <h2>{p2}</h2>
+        </div>
+    )
 }
 
 function Namai ({t1, t2, textColor}) {
@@ -23,5 +32,4 @@ function Namai ({t1, t2, textColor}) {
     )
 }
 
-
-export {LabasZuiki, Tekstas, Dryziai, Namai}
+export {LabasZuiki, Tekstas, Dryziai, Planetos, Namai}

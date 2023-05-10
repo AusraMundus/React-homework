@@ -1,5 +1,5 @@
 import './App.css';
-import {LabasZuiki, Tekstas, Dryziai, Namai} from "./Components/nd-react-base-1";
+import {LabasZuiki, Tekstas, Dryziai, Planetos, Namai} from "./Components/nd-react-base-1";
 
 function App() {
   
@@ -7,10 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-      <LabasZuiki />
-      <Tekstas text= 'Ką veiki?'/>
-      <Dryziai xxx={2}/>
-      <Namai t1='Sodas ir daržas' t2='Kiemas' textColor='green'/>
+        <LabasZuiki />
+        <Tekstas text= 'Ką veiki?'/>
+        <Dryziai stripes={1}/>
+        <Planetos  p1='Saturnas' p2='Plutonas'/>
+        <Namai t1='Sodas ir daržas' t2='Kiemas' textColor='green'/>
         
       </header>
     </div>
