@@ -7,8 +7,9 @@ const dogs = [
     {id: 5, name:'avigalvis'},
 ];
 
-// 1 užduotis
-function SuoKvadrate() {
+// 1. Atvaizduoti masyvą dogs. Kiekvienas šuo atskirame kvadrate.
+
+function DogInSquare() {
     let style= {
         width: 100,
         height: 100,
@@ -20,8 +21,9 @@ function SuoKvadrate() {
     return <ul>{dogsList}</ul>;
 }
 
-// 2 užduotis
-function SuoApskritime() {
+// 2. Atvaizduoti masyvą dogs. Kiekvienas šuo atskirame apskritime. Šunys turi būti išrūšiuoti nuo ilgiausio žodžio iki trumpiausio, o apskritimai sunumeruoti nuo 1 iki galo.
+
+function DogInCircle() {
     let styleSecond= {
         width: 100,
         height: 100,
@@ -34,8 +36,9 @@ function SuoApskritime() {
     return <ol>{dogsList}</ol>;
 }
 
-// 3 užduotis
-function SuoFormose() {
+// 3.Atvaizduoti masyvą dogs. Poriniuose indeksuose esančius šunis atvaizduoti kvadratuose, neporinius apskritime.
+
+function DogInShape() {
     let style= {
         width: 100,
         height: 100,
@@ -62,15 +65,17 @@ function SuoFormose() {
     return <ul>{dogsList}</ul>;
 }
 
-// 4 užduotis
+// 4. Atvaizduoti masyvą dogs. Šunis, kurie prasideda didžiąja raide praleisti (neatvaizduoti).
+
 function DogBigLetter () {
     const dogsList = dogs.filter(dog => dog.name[0] === dog.name[0].toLowerCase()).map(dog => <li key={dog.id}>{dog.name}</li>);
 
     return <ul>{dogsList}</ul>;
 }
 
-// 5 užduotis
-function DogsColor () {
+// 5. Naudojant masyvą dogs atvaizduoti skaičius, kurie yra lygūs žodžių masyve ilgiui. Skaičius, didesnius nei 6 atvaizduoti žaliai, kitus raudonai.
+
+function DogColor () {
     const dogsList = dogs.map(dog => {
         if (dog.name.length > 6) {
             return <li key={dog.id} style={{color: 'green'}}>{dog.name.length}</li>;
@@ -82,4 +87,4 @@ function DogsColor () {
     return <ul>{dogsList}</ul>;
 }
 
-export {SuoKvadrate, SuoApskritime, SuoFormose, DogBigLetter, DogsColor}
+export {DogInSquare, DogInCircle, DogInShape, DogBigLetter, DogColor}

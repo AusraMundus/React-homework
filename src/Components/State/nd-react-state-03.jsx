@@ -1,4 +1,5 @@
 // 3. Sukurti aplikaciją, kuri turi mygtukus plus ir minus, bei atvaizduoja skaičių 0. Paspaudus plus mygtuką, skaičius padidėja 1, o paspaudus minus- sumažėja 3
+
 import { useState } from 'react';
 
 export default function State03() {
