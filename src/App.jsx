@@ -1,6 +1,7 @@
 import './App.scss';
 import {LabasZuiki, Tekstas, Dryziai, Planetos, Namai} from "./Components/nd-react-base";
 import {SuoKvadrate, SuoApskritime, SuoFormose, DogBigLetter, DogsColor} from "./Components/nd-react-base-list";
+import Dogs from './Components/pvz-dogs';
 
 function App() {
   
@@ -19,6 +20,8 @@ function App() {
         <SuoFormose />
         <DogBigLetter />
         <DogsColor />
+        
+        <Dogs />
         
       </header>
     </div>
