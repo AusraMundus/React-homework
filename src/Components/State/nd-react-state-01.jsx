@@ -10,12 +10,12 @@ export default function State01() {
     } 
 
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30}}>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30, margin: "30px 0"}}>
             <div style={{display: "flex", gap: 30}}>
                 <button className="button" onClick={changeShape}>CHANGE</button>
             </div>
 
-            <div className="btn-shapes" style={{borderRadius: shape}}></div>
+            <div className="shapes" style={{borderRadius: shape}}></div>
         </div>
     );
 }

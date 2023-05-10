@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        {/*<State01 />*/}
-        {/*<State02 />*/}
-        {/*<State03 />*/}
-        {/*<State04 />*/}
+        <State01 />
+        <State02 />
+        <State03 />
+        <State04 />
         <State05 />
         
         {/*<Base01 />*/}

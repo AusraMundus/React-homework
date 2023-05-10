@@ -13,9 +13,9 @@ export default function State03() {
     }
 
     return (
-        <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: 20, maxWidth: "80%"}}>
+        <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: 20, maxWidth: "80%", margin: "30px 0"}}>
             <button className="button" onClick={minusThree}>-</button>
-            <h1>{number}</h1>
+            <h2>{number}</h2>
             <button className="button" onClick={plusOne}>+</button>
         </div>
     );

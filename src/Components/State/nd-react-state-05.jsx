@@ -19,7 +19,7 @@ export default function State04() {
     }
 
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30, maxWidth:"80%"}}>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30, maxWidth:"80%", margin: "30px 0"}}>
             <div style={{display: "flex", flexDirection: "row", gap: "10px"}}>
                 <button className="button" style={{backgroundColor: "red", color: 'white'}} onClick={addSquareRed}>ADD RED</button>
                 <button className="button" style={{backgroundColor: "blue", color: 'white'}} onClick={addSquareBlue}>ADD BLUE</button>

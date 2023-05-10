@@ -16,13 +16,13 @@ export default function State03() {
     } 
 
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30}}>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30, margin: "30px 0"}}>
             <div style={{display: "flex", gap: 30}}>
                 <button className="button" onClick={changeShape}>CHANGE</button>
                 <button className="button" onClick={randNumber}>RANDOM</button>
             </div>
 
-            <div className="btn-shapes" style={{borderRadius: shape}}>
+            <div className="shapes" style={{borderRadius: shape}}>
                 <h2>{number}</h2>
             </div>
         </div>
