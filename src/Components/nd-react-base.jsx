@@ -1,11 +1,14 @@
+// 1 užduotis
 function LabasZuiki() {
     return <p style={{color: 'pink'}}>LABAS, ZUIKI!</p>;
 }
 
+// 2 užduotis
 function Tekstas({text}) {
     return <h1>{text}</h1>;
 }
 
+// 3 užduotis
 function Dryziai({stripes}){
     let spalva = 'violet';
     if (stripes===1) {spalva='blue'}
@@ -14,6 +17,7 @@ function Dryziai({stripes}){
         return <h1 style={{color: spalva}}>Zebrai ir Bebrai</h1>
 }
 
+// 4 užduotis
 function Planetos ({p1, p2}) {
     return (
         <div>
@@ -23,6 +27,7 @@ function Planetos ({p1, p2}) {
     )
 }
 
+// 5 užduotis
 function Namai ({t1, t2, textColor}) {
     return (
         <div>
