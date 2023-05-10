@@ -14,6 +14,7 @@ function SuoKvadrate() {
         height: 100,
         border: "5px solid yellow",
         margin: 5,
+        display: 'inline-block',
     }
     const dogsList = dogs.map(dog => <li key={dog.id} style={{...style}}>{dog.name}</li>);
     return <ul>{dogsList}</ul>;
@@ -27,6 +28,7 @@ function SuoApskritime() {
         border: "5px solid pink",
         borderRadius: "50%",
         margin: 5,
+        display: 'inline-block',
     }
     const dogsList = dogs.sort((dog1, dog2) => dog1.length - dog2.length).map(dog => <li key={dog.id} style={{...styleSecond}}>{dog.name}</li>);
     return <ol>{dogsList}</ol>;
@@ -39,6 +41,7 @@ function SuoFormose() {
         height: 100,
         border: "5px solid pink",
         margin: 5,
+        display: 'inline-block',
     }
     let styleSecond= {
         width: 100,
@@ -46,6 +49,7 @@ function SuoFormose() {
         border: "5px solid pink",
         borderRadius: "50%",
         margin: 5,
+        display: 'inline-block',
     }
     const dogsList = dogs.map((dog, index) => {
         if (index % 2 === 0) {
