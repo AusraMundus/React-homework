@@ -7,11 +7,11 @@ export default function State04() {
     const [squareList, setSquareList] = useState([]);
     
     const addSquareRed = _ => {
-        setSquareList([...squareList, <div className="btn-red"></div>]);
+        setSquareList([...squareList, <div className="square-red"></div>]);
     }
     
     const addSquareBlue = _ => {
-        setSquareList([...squareList, <div className="btn-blue"></div>]);
+        setSquareList([...squareList, <div className="square-blue"></div>]);
     }
 
     const resetSquare = _ => {

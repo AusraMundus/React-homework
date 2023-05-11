@@ -6,12 +6,12 @@ import rand from '../../Function/rand';
 export default function State03() {
 
     const [number, setNumber] = useState(rand(5, 25));
-    const randNumber =_=> {
+    const randNumber = _ => {
         setNumber(rand(5, 25));
     }
 
     const [shape, setShape] = useState("0");
-    const changeShape =_=> {
+    const changeShape = _ => {
         setShape(shape === "0" ? "50%" : "0");
     } 
 

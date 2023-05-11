@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function State01() {
 
     const [shape, setShape] = useState("0");
-    const changeShape =_=> {
+    const changeShape = _ => {
         setShape(shape === "0" ? "50%" : "0");
     } 
 
