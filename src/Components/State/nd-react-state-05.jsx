@@ -4,18 +4,14 @@ import { useState } from 'react';
 
 export default function State04() {
     
-    const [squareList, setSquareList] = useState([]);
-    
-    const addSquareRed = _ => {
-        setSquareList([...squareList, <div className="square-red"></div>]);
-    }
-    
-    const addSquareBlue = _ => {
-        setSquareList([...squareList, <div className="square-blue"></div>]);
-    }
+    const [squareBlueList, setSquareBlueList] = useState([]);
+    const addSquareBlue= _ => setSquareBlueList(squareNew => [...squareNew, squareBlueList]);
+
+    const [squareRedList, setSquareRedList] = useState([]);
+    const addSquareRed= _ => setSquareRedList(squareNew => [...squareNew, squareRedList]);
 
     const resetSquare = _ => {
-        setSquareList([]);
+        squareBlueList([]);
     }
 
     return (
@@ -26,7 +22,14 @@ export default function State04() {
                 <button className="button" style={{backgroundColor: "gray", color: 'white'}} onClick={resetSquare}>RESET</button>
             </div>
             <div style={{display: "flex", flexWrap: "wrap"}}>
-                {squareList}
+                {
+                    squareBlueList.map((_, i) => <div className="square-blue" key={i}></div>)
+                }
+            </div>
+            <div style={{display: "flex", flexWrap: "wrap"}}>
+                {
+                    squareRedList.map((_, i) => <div className="square-red" key={i}></div>)
+                }
             </div>
         </div>
 
