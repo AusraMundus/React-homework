@@ -43,7 +43,6 @@
   font-size: 20px;
   background-color: blueviolet;
   border-radius: 30px;
-  
 }
 
 .shapes {
@@ -72,4 +71,44 @@
   background-color: red;
   margin: 5px;
   border: 1px solid lightcoral;
+}
+
+.button-trees {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  background-color: pink;
+  border-radius: 20px;
+}
+
+.rectangle-green {
+  width: 300px;
+  height: 400px;
+  background-color: green;
+  margin: 5px;
+  border: 1px solid greenyellow;
+}
+
+.square-black {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  margin: 5px;
+  border: 1px solid lightpink;
+}
+
+.button-small {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+  background-color: pink;
+  border-radius: 20px;
 }

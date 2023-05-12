@@ -7,6 +7,8 @@ import State02 from './Components/State/nd-react-state-02';
 import State03 from './Components/State/nd-react-state-03';
 import State04 from './Components/State/nd-react-state-04';
 import State05 from './Components/State/nd-react-state-05';
+import BlackSquare from './Components/State/nd-react-state2-blackSquare';
+import Trees from './Components/State/nd-react-state2-trees';
 
 function App() {
   
@@ -14,11 +16,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <State01 />
-        <State02 />
-        <State03 />
-        <State04 />
-        <State05 />
+        <BlackSquare />
+        {/*<Trees />*/}
+        
+        {/*<State01 />*/}
+        {/*<State02 />*/}
+        {/*<State03 />*/}
+        {/*<State04 />*/}
+        {/*<State05 />*/}
         
         {/*<Base01 />*/}
         {/*<Base02 text='Ką veiki?'/>*/}
