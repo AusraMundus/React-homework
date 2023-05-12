@@ -16,14 +16,14 @@ function SubState() {
 export default function BlackSquare() {
 
     const [rect, setRect] = useState([]);
-    const add = _ => setRect(r => [...r, <SubState />]);
+    const add = _ => setRect(rectNew => [...rectNew, <SubState />]);
 
     return (
         <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: "30px"}}>
-            <button className='button-trees' onClick={_=>add()}>Pridėti</button>
+            <button className='button-trees' onClick={_ => add()}>Pridėti</button>
             <div style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
                 {
-                    rect.map((masyvoPirmasNarys, i) => <div className="square-black" key={i}>{masyvoPirmasNarys}</div>) // .map callbackfunction
+                    rect.map((r, i) => <div className="square-black" key={i}>{r}</div>) // .map callbackfunction
                 }
             </div>
         </div>

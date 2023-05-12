@@ -8,8 +8,8 @@ import State03 from './Components/State/nd-react-state-03';
 import State04 from './Components/State/nd-react-state-04';
 import State05 from './Components/State/nd-react-state-05';
 import PushTheButton from './Components/State/nd-react-state2-03';
-import BlackSquare from './Components/State/nd-react-state2-blackSquare';
-import Trees from './Components/State/nd-react-state2-trees';
+import BlackSquare from './Components/State/nd-react-state2-02';
+import Trees from './Components/State/nd-react-state2-01';
 
 function App() {
   
