@@ -23,7 +23,7 @@ export default function BlackSquare() {
             <button className='button-trees' onClick={_=>add()}>Pridėti</button>
             <div style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
                 {
-                    rect.map((a, i) => <div className="square-black" key={i}>{a}</div>)
+                    rect.map((masyvoPirmasNarys, i) => <div className="square-black" key={i}>{masyvoPirmasNarys}</div>) // .map callbackfunction
                 }
             </div>
         </div>
